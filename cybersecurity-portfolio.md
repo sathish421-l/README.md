@@ -12,4 +12,4 @@
 ### Introduction to Academy (Completed)
 * **Today's Progress:** Successfully completed the entire introductory module.
 * **Skills Learned:** Learned how to navigate the platform, spawn interactive target instances, and interact with live cloud labs using the built-in Pwnbox terminal.
-* **Next Steps:** Moving on to the **Web Requests** module next to study cloud communication fundamentals.
+* **Next Steps:** Moving on to the **Web Requests** module next to study cloud communication fundamentals.  
