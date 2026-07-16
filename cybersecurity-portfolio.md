@@ -13,3 +13,8 @@
 * **Today's Progress:** Successfully completed the entire introductory module.
 * **Skills Learned:** Learned how to navigate the platform, spawn interactive target instances, and interact with live cloud labs using the built-in Pwnbox terminal.
 * **Next Steps:** Moving on to the **Web Requests** module next to study cloud communication fundamentals.  
+
+## WHAT I LEARN TODAY  Frameworks and security (completed the module) 
+###  On  Google cybersecurity 
+* **what i learn today (Day4) :** Frameworks and security and i succuesfully completed my module * **
+* **Next steps:** Entering module 3* **
