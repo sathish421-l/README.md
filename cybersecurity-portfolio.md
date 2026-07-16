@@ -18,3 +18,14 @@
 ###  On  Google cybersecurity 
 * **what i learn today (Day4) :** Frameworks and security and i succuesfully completed my module * **
 * **Next steps:** Entering module 3* **
+### The Main Goal:** The CIA Triad
+* **Confidentiality:** Keeping data private so only the right people can see it.
+*  **Integrity:** Making sure data doesn’t get messed with or changed
+*  **vailability:** Ensuring systems actually work when someone needs them.
+### The 6 Functions of NIST CSF 2.0
+* **Govern,
+* ** Identfy
+* ** Protect
+* **Detect
+* **Respond
+* **Recover
