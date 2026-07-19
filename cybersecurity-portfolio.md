@@ -52,3 +52,20 @@ A comprehensive breakdown and documentation of core Active Directory (AD) concep
 * **Group Policy Objects (GPOs):** Analyzed how administrators enforce security baselines, software deployment, and registry settings across thousands of endpoints.
 * **Privileged Access:** Examined the differences between Domain Admins, Enterprise Admins, and standard users.
 
+# Module 3: Introduction to Cybersecurity On Google Cybersecurity Certificate
+* **Knowledge:** SIEM-and-Log-Analysis
+* **Tools Studied:** Learn about open source tools like Linux & Suricata
+
+## SIEM Deployment Models Looked At:
+* **Cloud-Native:** Fully managed in the cloud (e.g., Google Chronicle, Splunk Cloud). Offers fast scaling and low maintenance.
+* **Self-Hosted / On-Premises:** Installed on an organization's private servers (e.g., Splunk Enterprise) for maximum data control.
+* **Hybrid:** Combines on-premise log collection with cloud-based analytics to balance security and scalability.
+
+## MODULE 4: Use playbooks to Respond Incidents
+* **Core Focus:** I Actually learned the phases of "INCIDENT RESPONSE"
+* **PREPARATION:** Establishing tools, resources, training necessary to respond to incidents before they actually happen
+* **Detection and Analysis:** monitoring security alerts and logs using SIEM tools, identify a threat
+* **Containment:** Taking immediate action to isolate the threat and prevent it from spreading and causing further damage to the network
+* **Incident response [Eradication&Recovery]:** Completely removing the rootcause of incident and restoring affected systems back
+* **Post-Incident activity:** Reviewing what happened to improve our defenses for next time
+* **Coordination:** Keeping everyone informed and working together smoothly.
