@@ -69,3 +69,60 @@ A comprehensive breakdown and documentation of core Active Directory (AD) concep
 * **Incident response [Eradication&Recovery]:** Completely removing the rootcause of incident and restoring affected systems back
 * **Post-Incident activity:** Reviewing what happened to improve our defenses for next time
 * **Coordination:** Keeping everyone informed and working together smoothly.
+
+# 🛡️ My Cybersecurity Learning Journey & Portfolio
+
+Hi there! 👋 I am a student who recently completed my 12th standard, and I am building my foundations in computer networks and defensive security. I am documenting my progress here as I work through the **Google Cybersecurity Professional Certificate**.
+
+---
+
+## 🎓 Completed Courses & Concepts
+
+### 🔹 Course 2: Play It Safe: Manage Security Risks 
+Learned how organizations identify, manage, and mitigate security risks using modern defensive tools:
+*   **SIEM Tools (Security Information and Event Management):** Understanding how to collect and analyze centralized log data to find security threats.
+*   **SOAR Tools (Security Orchestration, Automation, and Response):** Understanding how to automate playbook responses to handle security incidents faster.
+
+---
+
+## 📖 Current Learning (Course 3)
+
+### 🔸 Course 3: Connect & Protect: Network and Network Security
+I am diving deep into network architecture, foundational protocols, and traffic analysis:
+*   **Network Infrastructure:** Learning about networking tools, cloud networks, cloud computing, and software-defined networks (SDN).
+*   **Protocols & Segmentation:** Currently moving into lessons covering wireless security, firewalls, VPNs, Security Zones, and **Subnetting/CIDR**.
+
+---
+
+## ✍️ My Technical Study Notes & Insights
+
+### ⚡ Network Speed & Traffic Monitoring
+*   **Speed & Bandwidth:** Speed refers to the rate at which data packets are received or downloaded. Security professionals track network bandwidth and speed because irregular patterns or sudden drops can indicate a network attack.
+*   **Packet Sniffing:** The practice of capturing and inspecting data packets as they travel across a network.
+
+### 🏎️ Transport Protocols: TCP vs. UDP
+*   **TCP (Transmission Control Protocol):** A connection-oriented protocol that allows two devices to form a reliable connection and stream data. It includes a specific set of instructions to organize data and ensures packets reach their appropriate destination.
+*   **UDP (User Datagram Protocol):** A connectionless protocol that does not establish a formal connection between devices before transmitting data, prioritizing speed over verification.
+
+### 🗺️ Network Architectural Models
+Data flows across networks through layered stacks:
+*   **TCP/IP Model Layers:**
+    *   *Application Layer:* Contains protocols like HTTPS, TLS, DNS.
+    *   *Transport Layer:* Manages host communication using TCP or UDP.
+    *   *Internet Layer:* Manages routing using IPv4 or IPv6.
+*   **The OSI Model (7 Layers):**
+    *   *Layer 7: Application Layer* — Connects everyday user apps (browsers, email clients) directly to the network.
+    *   *Layer 6: Presentation Layer* — Acts as the data translator; handles formatting, encryption, and compression.
+    *   *Layer 5: Session Layer* — Opens, manages, and closes communication connections between devices.
+    *   *Layer 4: Transport Layer* — Breaks data into smaller pieces, delivers them reliably, and ensures correct reassembly.
+    *   *Layer 3: Network Layer* — Finds the best physical path for data across different networks using logical IP addresses.
+    *   *Layer 2: Data Link Layer* — Handles the direct transfer of data between devices on the *same* local network using MAC addresses.
+    *   *Layer 1: Physical Layer* — Transmits raw, unstructured binary data (0s and 1s) as electrical, optical, or radio signals over physical cables and hardware.
+
+### 📦 IPv4 Packet Structure
+*   **Packet Size:** Ranges from **20 to 60 bytes**. The first 20 bytes are fixed and contain routing data.
+*   **The 13 Header Fields:** Security professionals analyze these exact fields during packet analysis:
+    1. Version | 2. IP Header Length (IHL) | 3. Type of Service (ToS) | 4. Total Length | 5. Identification | 6. Flags | 7. Fragmentation Offset | 8. Time to Live (TTL) | 9. Protocol | 10. Header Checksum | 11. Source IP Address | 12. Destination IP Address | 13. Options
+
+---
+
