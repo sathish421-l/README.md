@@ -122,6 +122,49 @@ Data flows across networks through layered stacks:
 ### 📦 IPv4 Packet Structure
 *   **Packet Size:** Ranges from **20 to 60 bytes**. The first 20 bytes are fixed and contain routing data.
 *   **The 13 Header Fields:** Security professionals analyze these exact fields during packet analysis:
+
+# 💻 My Cybersecurity & Windows PowerShell Portfolio
+
+Welcome to my portfolio! This space documents my hands-on technical journey in cybersecurity, system administration, and security automation. Here, I showcase the foundational mechanics I have mastered to navigate, audit, and secure Windows environments.
+
+---
+
+## 🚀 Core Technical Competencies: Windows PowerShell
+
+While solving complex labs on platforms like **TryHackMe**, I deeply analyzed the core structure of Windows PowerShell. Below are the foundational concepts I have mastered and can confidently apply in active security operations:
+
+### 1. The Verb-Noun Architecture
+PowerShell relies on a strict, predictable naming convention: `Verb-Noun`. 
+* **The Verb** dictates the precise action (e.g., `Get`, `Set`, `Stop`, `New`).
+* **The Noun** represents the singular target system object (e.g., `Process`, `Service`, `Content`).
+* *Why it matters:* This standardization allows a security analyst to accurately predict tool usage without relying heavily on external documentation.
+
+### 2. Live Command Discovery & Auditing
+In a real-world incident response or penetration testing scenario, a defender or attacker must discover what tools are available natively on a machine (Living off the Land). I utilize:
+* **`Get-Command` with Wildcards (`*`):** To aggressively hunt for capabilities when only a keyword is known.
+  * *Example:* Finding all native host-firewall configuration utilities:
+    ```powershell
+    Get-Command *Firewall*
+    ```
+* **`Get-Help`:** To parse internal documentation and extract actionable usage syntax via the `-Examples` flag.
+
+### 3. Object-Oriented Pipeline Filtering
+Unlike legacy command prompts (like CMD or Linux Bash) which manipulate raw text string streams, PowerShell manages actual structural **Objects**. This allows for sophisticated data carving:
+
+* **Isolating Columns (`Select-Object`):** Used to trim down massive datasets and display *only* the specific properties needed for an audit trail.
+  * *Example (Viewing only service health states):*
+    ```powershell
+    Get-Service | Select-Object -Property Status
+    ```
+* **Filtering Rows (`Where-Object`):** Used to isolate specific targets based on strict logical conditions (e.g., catching processes consuming abnormal memory or identifying unauthorized running services).
+
+---
+
+## 🏆 Hands-On Lab Experience
+* **TryHackMe Platform Training:** Actively working through defensive and offensive rooms to practice live system enumeration, registry auditing, and permission mapping using native Windows tools.
+* **Self-Directed Problem Solving:** Developed a strong troubleshooting mindset by shifting away from copy-pasting lab solutions to independently designing pipeline expressions using native help utilities.
+
+
     1. Version | 2. IP Header Length (IHL) | 3. Type of Service (ToS) | 4. Total Length | 5. Identification | 6. Flags | 7. Fragmentation Offset | 8. Time to Live (TTL) | 9. Protocol | 10. Header Checksum | 11. Source IP Address | 12. Destination IP Address | 13. Options
 
 ---
