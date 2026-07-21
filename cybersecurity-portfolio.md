@@ -164,6 +164,58 @@ Unlike legacy command prompts (like CMD or Linux Bash) which manipulate raw text
 * **TryHackMe Platform Training:** Actively working through defensive and offensive rooms to practice live system enumeration, registry auditing, and permission mapping using native Windows tools.
 * **Self-Directed Problem Solving:** Developed a strong troubleshooting mindset by shifting away from copy-pasting lab solutions to independently designing pipeline expressions using native help utilities.
 
+# Corporate Security Controls Alignment Framework (CompTIA Security+ SY0-701)
+
+## Project Overview
+This portfolio project demonstrates the identification, classification, and implementation mapping of security controls within an enterprise environment. Utilizing the **CompTIA Security+ SY0-701 Domain 1 (General Security Concepts)** framework, this project serves as a reference architecture blueprint for aligning business security policies with technical, administrative, and physical safeguards.
+
+---
+
+## 1. Security Control Categories (How Controls are Implemented)
+Security controls form the foundational defense layers of an organization. This matrix categorizes enterprise safeguards by their implementation mechanism:
+
+| Category | Definition | Corporate Implementation Examples |
+| :--- | :--- | :--- |
+| **Technical (Logical)** | Defenses configured within hardware, software, or firmware systems. | • Next-Generation Firewalls (NGFW)<br>• Data Encryption at rest (AES-256)<br>• Intrusion Prevention Systems (IPS) |
+| **Managerial** | Strategic oversight, risk assessments, and policies designed by leadership to guide risk mitigation. | • Information Security Policies (WISP)<br>• Business Impact Analysis (BIA)<br>• Vendor Risk Assessments |
+| **Operational** | Day-to-day procedural activities executed by personnel to maintain security baselines. | • Annual Security Awareness Training<br>• Regular Data Backup Execution<br>• Continuous Log Reviews |
+| **Physical** | Tangible barriers and environmental items protecting facilities, hardware, and personnel. | • Biometric Mantraps<br>• CCTV Surveillance Cameras<br>• Facility Security Guards |
+
+---
+
+## 2. Functional Control Types (What Controls Achieve)
+To build a defense-in-depth architecture, controls must also be mapped by their tactical function during a potential security event cycle:
+
+*   **Preventive:** Actively blocks unauthorized activity before it can occur.
+    *   *Example:* A physical wall or a strict firewall Access Control List (ACL).
+*   **Deterrent:** Discourages psychological threat actors from attempting an attack.
+    *   *Example:* Visible "24/7 Monitored" warning signs and highly visible cameras.
+*   **Corrective:** Rebuilds systems, repairs vulnerabilities, and restores business operations post-incident.
+    *   *Example:* Restoring production databases from uncorrupted cloud backups.
+*   **Compensating (Alternative):** A temporary or supplementary safeguard deployed when primary controls are technically unfeasible.
+    *   *Example:* Placing a legacy, unpatchable server into an isolated VLAN with hyper-strict monitoring.
+*   **Directive:** Mandates specific, explicit guidelines or rules of behavior.
+    *   *Example:* A corporate policy statement declaring that multi-factor authentication (MFA) is strictly mandatory for all employees.
+
+---
+
+## 3. Practical Architecture Scenario Matrix
+Below is a cross-reference matrix displaying how **Categories** and **Functional Types** work in unison to protect enterprise assets:
+
+| Functional Type | Technical Category | Managerial Category | Operational Category | Physical Category |
+| :--- | :--- | :--- | :--- | :--- |
+| **Preventive** | Firewall blocking ports | Signing an NDA | Offboarding checklist | Deadbolt lock |
+| **Deterrent** | Login banner warnings | Threat of termination | Security audits | Warning signs |
+| **Corrective** | Antivirus quarantining files | Incident Response Plan | Restoring backups | Repairing a broken fence |
+| **Compensating** | Custom application firewall | Budget exceptions | Extra manual audits | Temporary security guard |
+| **Directive** | System-enforced passwords | Acceptable Use Policy | Employee onboarding | Clear ID badge policy |
+
+---
+
+## 4. Key Takeaways & Exam Alignment
+*   **Defense-in-Depth:** A secure architecture never relies on a single control category. Technical protections must be backed by clear managerial oversight and physical barriers.
+*   **Cryptographic Focus:** In Domain 1, technical controls like hashing protect data integrity, while encryption ensures confidentiality. Both work in tandem with operational processes (such as key lifecycle management).
+
 
     1. Version | 2. IP Header Length (IHL) | 3. Type of Service (ToS) | 4. Total Length | 5. Identification | 6. Flags | 7. Fragmentation Offset | 8. Time to Live (TTL) | 9. Protocol | 10. Header Checksum | 11. Source IP Address | 12. Destination IP Address | 13. Options
 
