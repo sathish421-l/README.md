@@ -1,275 +1,147 @@
-## Active Directory (In Progress)
-### On TryHackMe Platform
-* **What I learned today:** I am progressing through my Active Directory rooms on TryHackMe.
-* **Next Steps:** I am going to move on to Module 4 in the next session.
+# Cybersecurity Portfolio
 
-## Google Cybersecurity Certificate (Day 3/60)
-### Today I successfully completed Module 1
-* **Today's Progress:** As of now, I successfully completed my Foundations chapter and am heading to "Play It Safe".
-* **Milestone:** I completed my very first module inside "Play It Safe".
-
-## Hack The Box Academy 
-### Introduction to Academy (Completed)
-* **Today's Progress:** Successfully completed the entire introductory module.
-* **Skills Learned:** Learned how to navigate the platform, spawn interactive target instances, and interact with live cloud labs using the built-in Pwnbox terminal.
-* **Next Steps:** Moving on to the **Web Requests** module next to study cloud communication fundamentals.  
-
-## WHAT I LEARN TODAY  Frameworks and security (completed the module) 
-###  On  Google cybersecurity 
-* **what i learn today (Day4) :** Frameworks and security and i succuesfully completed my module * **
-* **Next steps:** Entering module 3* **
-### The Main Goal:** The CIA Triad
-* **Confidentiality:** Keeping data private so only the right people can see it.
-*  **Integrity:** Making sure data doesn’t get messed with or changed
-*  **vailability:** Ensuring systems actually work when someone needs them.
-### The 6 Functions of NIST CSF 2.0
-* **Govern,
-* ** Identfy
-* ** Protect
-* **Detect
-* **Respond
-* **Recover
-
-  # TryHackMe: Active Directory Basics - Write-up & Reference
-
-A comprehensive breakdown and documentation of core Active Directory (AD) concepts, completed via TryHackMe.
-
-## 🎯 Key Concepts Mast
-
-### 🔹 1. Windows Domains & Architecture
-* **Domain Controllers (DC):** Understood the role of DCs as the central authority managing security authentication and requests.
-* **Trees, Forests & Trusts:** Learnt how multi-domain environments establish trust boundaries and handle cross-domain resource access.
-
-### 🔹 2. Active Directory Infrastructure
-* **Objects & OUs:** Explored how Users, Groups, and Computers are organized inside Organizational Units (OUs).
-* **Database (NTDS.dit):** Understood where AD stores its directory data, cryptographic hashes, and group memberships.
-
-### 🔹 3. Identity & Access Management (IAM)
-* **User & Computer Lifecycle:** Documented the provisioning, management, and de-provisioning of accounts within a domain.
-* **Authentication Protocols:** Studied how **Kerberos** (tickets, TGT, TGS) and **NTLM** function to authenticate users securely.
-
-### 🔹 4. Enterprise Administration & Security
-* **Group Policy Objects (GPOs):** Analyzed how administrators enforce security baselines, software deployment, and registry settings across thousands of endpoints.
-* **Privileged Access:** Examined the differences between Domain Admins, Enterprise Admins, and standard users.
-
-# Module 3: Introduction to Cybersecurity On Google Cybersecurity Certificate
-* **Knowledge:** SIEM-and-Log-Analysis
-* **Tools Studied:** Learn about open source tools like Linux & Suricata
-
-## SIEM Deployment Models Looked At:
-* **Cloud-Native:** Fully managed in the cloud (e.g., Google Chronicle, Splunk Cloud). Offers fast scaling and low maintenance.
-* **Self-Hosted / On-Premises:** Installed on an organization's private servers (e.g., Splunk Enterprise) for maximum data control.
-* **Hybrid:** Combines on-premise log collection with cloud-based analytics to balance security and scalability.
-
-## MODULE 4: Use playbooks to Respond Incidents
-* **Core Focus:** I Actually learned the phases of "INCIDENT RESPONSE"
-* **PREPARATION:** Establishing tools, resources, training necessary to respond to incidents before they actually happen
-* **Detection and Analysis:** monitoring security alerts and logs using SIEM tools, identify a threat
-* **Containment:** Taking immediate action to isolate the threat and prevent it from spreading and causing further damage to the network
-* **Incident response [Eradication&Recovery]:** Completely removing the rootcause of incident and restoring affected systems back
-* **Post-Incident activity:** Reviewing what happened to improve our defenses for next time
-* **Coordination:** Keeping everyone informed and working together smoothly.
-
-# 🛡️ My Cybersecurity Learning Journey & Portfolio
-
-Hi there! 👋 I am a student who recently completed my 12th standard, and I am building my foundations in computer networks and defensive security. I am documenting my progress here as I work through the **Google Cybersecurity Professional Certificate**.
+Cybersecurity & Blockchain student building foundations in defensive security, systems administration, and secure network architecture. Below are project write-ups from hands-on labs and coursework — not a running log, just the finished work.
 
 ---
 
-## 🎓 Completed Courses & Concepts
+## 1. Corporate Security Controls Alignment Framework
+*Based on CompTIA Security+ (SY0-701) — Domain 1: General Security Concepts*
 
-### 🔹 Course 2: Play It Safe: Manage Security Risks 
-Learned how organizations identify, manage, and mitigate security risks using modern defensive tools:
-*   **SIEM Tools (Security Information and Event Management):** Understanding how to collect and analyze centralized log data to find security threats.
-*   **SOAR Tools (Security Orchestration, Automation, and Response):** Understanding how to automate playbook responses to handle security incidents faster.
+A reference architecture mapping how security controls are categorized and how they function within an enterprise environment.
 
----
+### Control Categories (How Controls Are Implemented)
 
-## 📖 Current Learning (Course 3)
-
-### 🔸 Course 3: Connect & Protect: Network and Network Security
-I am diving deep into network architecture, foundational protocols, and traffic analysis:
-*   **Network Infrastructure:** Learning about networking tools, cloud networks, cloud computing, and software-defined networks (SDN).
-*   **Protocols & Segmentation:** Currently moving into lessons covering wireless security, firewalls, VPNs, Security Zones, and **Subnetting/CIDR**.
-
----
-
-## ✍️ My Technical Study Notes & Insights
-
-### ⚡ Network Speed & Traffic Monitoring
-*   **Speed & Bandwidth:** Speed refers to the rate at which data packets are received or downloaded. Security professionals track network bandwidth and speed because irregular patterns or sudden drops can indicate a network attack.
-*   **Packet Sniffing:** The practice of capturing and inspecting data packets as they travel across a network.
-
-### 🏎️ Transport Protocols: TCP vs. UDP
-*   **TCP (Transmission Control Protocol):** A connection-oriented protocol that allows two devices to form a reliable connection and stream data. It includes a specific set of instructions to organize data and ensures packets reach their appropriate destination.
-*   **UDP (User Datagram Protocol):** A connectionless protocol that does not establish a formal connection between devices before transmitting data, prioritizing speed over verification.
-
-### 🗺️ Network Architectural Models
-Data flows across networks through layered stacks:
-*   **TCP/IP Model Layers:**
-    *   *Application Layer:* Contains protocols like HTTPS, TLS, DNS.
-    *   *Transport Layer:* Manages host communication using TCP or UDP.
-    *   *Internet Layer:* Manages routing using IPv4 or IPv6.
-*   **The OSI Model (7 Layers):**
-    *   *Layer 7: Application Layer* — Connects everyday user apps (browsers, email clients) directly to the network.
-    *   *Layer 6: Presentation Layer* — Acts as the data translator; handles formatting, encryption, and compression.
-    *   *Layer 5: Session Layer* — Opens, manages, and closes communication connections between devices.
-    *   *Layer 4: Transport Layer* — Breaks data into smaller pieces, delivers them reliably, and ensures correct reassembly.
-    *   *Layer 3: Network Layer* — Finds the best physical path for data across different networks using logical IP addresses.
-    *   *Layer 2: Data Link Layer* — Handles the direct transfer of data between devices on the *same* local network using MAC addresses.
-    *   *Layer 1: Physical Layer* — Transmits raw, unstructured binary data (0s and 1s) as electrical, optical, or radio signals over physical cables and hardware.
-
-### 📦 IPv4 Packet Structure
-*   **Packet Size:** Ranges from **20 to 60 bytes**. The first 20 bytes are fixed and contain routing data.
-*   **The 13 Header Fields:** Security professionals analyze these exact fields during packet analysis:
-
-# 💻 My Cybersecurity & Windows PowerShell Portfolio
-
-Welcome to my portfolio! This space documents my hands-on technical journey in cybersecurity, system administration, and security automation. Here, I showcase the foundational mechanics I have mastered to navigate, audit, and secure Windows environments.
-
----
-
-## 🚀 Core Technical Competencies: Windows PowerShell
-
-While solving complex labs on platforms like **TryHackMe**, I deeply analyzed the core structure of Windows PowerShell. Below are the foundational concepts I have mastered and can confidently apply in active security operations:
-
-### 1. The Verb-Noun Architecture
-PowerShell relies on a strict, predictable naming convention: `Verb-Noun`. 
-* **The Verb** dictates the precise action (e.g., `Get`, `Set`, `Stop`, `New`).
-* **The Noun** represents the singular target system object (e.g., `Process`, `Service`, `Content`).
-* *Why it matters:* This standardization allows a security analyst to accurately predict tool usage without relying heavily on external documentation.
-
-### 2. Live Command Discovery & Auditing
-In a real-world incident response or penetration testing scenario, a defender or attacker must discover what tools are available natively on a machine (Living off the Land). I utilize:
-* **`Get-Command` with Wildcards (`*`):** To aggressively hunt for capabilities when only a keyword is known.
-  * *Example:* Finding all native host-firewall configuration utilities:
-    ```powershell
-    Get-Command *Firewall*
-    ```
-* **`Get-Help`:** To parse internal documentation and extract actionable usage syntax via the `-Examples` flag.
-
-### 3. Object-Oriented Pipeline Filtering
-Unlike legacy command prompts (like CMD or Linux Bash) which manipulate raw text string streams, PowerShell manages actual structural **Objects**. This allows for sophisticated data carving:
-
-* **Isolating Columns (`Select-Object`):** Used to trim down massive datasets and display *only* the specific properties needed for an audit trail.
-  * *Example (Viewing only service health states):*
-    ```powershell
-    Get-Service | Select-Object -Property Status
-    ```
-* **Filtering Rows (`Where-Object`):** Used to isolate specific targets based on strict logical conditions (e.g., catching processes consuming abnormal memory or identifying unauthorized running services).
-
----
-
-## 🏆 Hands-On Lab Experience
-* **TryHackMe Platform Training:** Actively working through defensive and offensive rooms to practice live system enumeration, registry auditing, and permission mapping using native Windows tools.
-* **Self-Directed Problem Solving:** Developed a strong troubleshooting mindset by shifting away from copy-pasting lab solutions to independently designing pipeline expressions using native help utilities.
-
-# Corporate Security Controls Alignment Framework (CompTIA Security+ SY0-701)
-
-## Project Overview
-This portfolio project demonstrates the identification, classification, and implementation mapping of security controls within an enterprise environment. Utilizing the **CompTIA Security+ SY0-701 Domain 1 (General Security Concepts)** framework, this project serves as a reference architecture blueprint for aligning business security policies with technical, administrative, and physical safeguards.
-
----
-
-## 1. Security Control Categories (How Controls are Implemented)
-Security controls form the foundational defense layers of an organization. This matrix categorizes enterprise safeguards by their implementation mechanism:
-
-| Category | Definition | Corporate Implementation Examples |
+| Category | Definition | Implementation Examples |
 | :--- | :--- | :--- |
-| **Technical (Logical)** | Defenses configured within hardware, software, or firmware systems. | • Next-Generation Firewalls (NGFW)<br>• Data Encryption at rest (AES-256)<br>• Intrusion Prevention Systems (IPS) |
-| **Managerial** | Strategic oversight, risk assessments, and policies designed by leadership to guide risk mitigation. | • Information Security Policies (WISP)<br>• Business Impact Analysis (BIA)<br>• Vendor Risk Assessments |
-| **Operational** | Day-to-day procedural activities executed by personnel to maintain security baselines. | • Annual Security Awareness Training<br>• Regular Data Backup Execution<br>• Continuous Log Reviews |
-| **Physical** | Tangible barriers and environmental items protecting facilities, hardware, and personnel. | • Biometric Mantraps<br>• CCTV Surveillance Cameras<br>• Facility Security Guards |
+| **Technical (Logical)** | Defenses configured within hardware, software, or firmware. | Next-Gen Firewalls, AES-256 encryption at rest, Intrusion Prevention Systems |
+| **Managerial** | Strategic oversight and policy set by leadership to guide risk mitigation. | Information Security Policies, Business Impact Analysis, Vendor Risk Assessments |
+| **Operational** | Day-to-day procedures executed by personnel to maintain security baselines. | Security awareness training, scheduled backups, continuous log reviews |
+| **Physical** | Tangible barriers protecting facilities, hardware, and personnel. | Biometric mantraps, CCTV, security guards |
 
----
+### Functional Control Types (What Controls Achieve)
 
-## 2. Functional Control Types (What Controls Achieve)
-To build a defense-in-depth architecture, controls must also be mapped by their tactical function during a potential security event cycle:
+- **Preventive** — blocks unauthorized activity before it occurs (e.g. a firewall ACL)
+- **Deterrent** — discourages an attacker psychologically (e.g. visible monitoring signage)
+- **Corrective** — repairs and restores after an incident (e.g. restoring from backup)
+- **Compensating** — a temporary safeguard when the primary control isn't feasible (e.g. isolating a legacy server in its own VLAN)
+- **Directive** — mandates specific behavior through policy (e.g. a mandatory MFA policy)
 
-*   **Preventive:** Actively blocks unauthorized activity before it can occur.
-    *   *Example:* A physical wall or a strict firewall Access Control List (ACL).
-*   **Deterrent:** Discourages psychological threat actors from attempting an attack.
-    *   *Example:* Visible "24/7 Monitored" warning signs and highly visible cameras.
-*   **Corrective:** Rebuilds systems, repairs vulnerabilities, and restores business operations post-incident.
-    *   *Example:* Restoring production databases from uncorrupted cloud backups.
-*   **Compensating (Alternative):** A temporary or supplementary safeguard deployed when primary controls are technically unfeasible.
-    *   *Example:* Placing a legacy, unpatchable server into an isolated VLAN with hyper-strict monitoring.
-*   **Directive:** Mandates specific, explicit guidelines or rules of behavior.
-    *   *Example:* A corporate policy statement declaring that multi-factor authentication (MFA) is strictly mandatory for all employees.
+### Scenario Matrix
 
----
-
-## 3. Practical Architecture Scenario Matrix
-Below is a cross-reference matrix displaying how **Categories** and **Functional Types** work in unison to protect enterprise assets:
-
-| Functional Type | Technical Category | Managerial Category | Operational Category | Physical Category |
+| Functional Type | Technical | Managerial | Operational | Physical |
 | :--- | :--- | :--- | :--- | :--- |
 | **Preventive** | Firewall blocking ports | Signing an NDA | Offboarding checklist | Deadbolt lock |
 | **Deterrent** | Login banner warnings | Threat of termination | Security audits | Warning signs |
-| **Corrective** | Antivirus quarantining files | Incident Response Plan | Restoring backups | Repairing a broken fence |
+| **Corrective** | Antivirus quarantining files | Incident response plan | Restoring backups | Repairing a broken fence |
 | **Compensating** | Custom application firewall | Budget exceptions | Extra manual audits | Temporary security guard |
-| **Directive** | System-enforced passwords | Acceptable Use Policy | Employee onboarding | Clear ID badge policy |
+| **Directive** | System-enforced passwords | Acceptable use policy | Employee onboarding | ID badge policy |
+
+**Takeaway:** A secure architecture never relies on one control category alone — technical protections need managerial oversight and physical barriers backing them up. Cryptographic controls (hashing, encryption) protect integrity and confidentiality, but only work in tandem with operational processes like key lifecycle management.
 
 ---
 
-## 4. Key Takeaways & Exam Alignment
-*   **Defense-in-Depth:** A secure architecture never relies on a single control category. Technical protections must be backed by clear managerial oversight and physical barriers.
-*   **Cryptographic Focus:** In Domain 1, technical controls like hashing protect data integrity, while encryption ensures confidentiality. Both work in tandem with operational processes (such as key lifecycle management).
+## 2. PowerShell: Verb-Noun Architecture & Object Pipeline Filtering
 
+Core PowerShell concepts applied while working through Windows-focused labs on TryHackMe.
 
-    1. Version | 2. IP Header Length (IHL) | 3. Type of Service (ToS) | 4. Total Length | 5. Identification | 6. Flags | 7. Fragmentation Offset | 8. Time to Live (TTL) | 9. Protocol | 10. Header Checksum | 11. Source IP Address | 12. Destination IP Address | 13. Options
+### The Verb-Noun Convention
+PowerShell commands follow a strict `Verb-Noun` structure — the verb defines the action (`Get`, `Set`, `Stop`, `New`), the noun defines the target object (`Process`, `Service`, `Content`). This predictability means a security analyst can often guess the right command without external documentation.
 
----
-# 🐧 Linux Shell & Scripting Fundamentals Lab
+### Live Command Discovery
+For incident response or enumeration, discovering what's natively available on a machine matters (living-off-the-land techniques):
 
-A comprehensive laboratory notebook documenting my hands-on mastery of Linux shells, architecture environments, and bash scripting automation. Completed as part of practical cybersecurity training.
-
-## 🚀 Skills Acquired & Demonstrated
-* **Shell Architecture:** Explored the structural differences between user interfaces, system shells, and the Linux kernel core.
-* **Interpreter Configurations:** Evaluated shell environments across distributions, including Bash (Bourne Again Shell), Zsh, and Dash ecosystem dependencies.
-* **Automation Engineering:** Formulated programmatic automation workflows using variables, loops, positional arguments, and operational conditional logic.
-* **System Permissions Administration:** Handled Linux discretionary access control boundaries using `chmod` to transition files from raw data into signed user executables.
-
----
-
-## 🛠️ Practical Implementations
-
-### 1. Interactive Scripting (`first_script.sh`)
-An interactive automation tool demonstrating variable creation, dynamic shell input parsing via the `read` command, and evaluation streams utilizing the `echo` terminal utility.
-
-### 2. Numerical Iterations Loop (`loop_script.sh`)
-Engineered structured iteration tasks using programmatic loops to process repetitive mathematical indices cleanly without expanding script sizes.
-
-### 3. Conditional Security Locker Logic (`conditional_script.sh`)
-Developed a functional conditional execution script parsing localized strings using logic sequences (`if/else` closures) to simulate credential validation wrappers.
-
----
-
-## 💻 Technical Portfolio Showcase
-
-### Interactive Input Flow
-```bash
-#!/bin/bash
-# Interpreter Initialization
-echo "Hey, what's your name?"
-read name
-echo "Welcome, \$name"
+```powershell
+# Hunt for all native firewall-related commands
+Get-Command *Firewall*
 ```
 
-### Iteration Task Automation
+`Get-Help -Examples` is used to pull actionable usage syntax directly from built-in documentation.
+
+### Object-Oriented Pipeline Filtering
+Unlike CMD or Bash, which pass raw text, PowerShell pipes structured objects — enabling precise data extraction:
+
+```powershell
+# Isolate just the status column across all services
+Get-Service | Select-Object -Property Status
+```
+
+`Where-Object` filters rows by logical condition — useful for isolating abnormal processes or unauthorized running services during an audit.
+
+---
+
+## 3. Active Directory Basics — Reference Write-up
+*TryHackMe — Active Directory rooms*
+
+### Windows Domains & Architecture
+- **Domain Controllers (DC):** central authority managing authentication and security requests.
+- **Trees, Forests & Trusts:** how multi-domain environments establish trust boundaries and cross-domain resource access.
+
+### Active Directory Infrastructure
+- **Objects & OUs:** Users, Groups, and Computers organized inside Organizational Units.
+- **NTDS.dit:** where AD stores directory data, cryptographic hashes, and group memberships.
+
+### Identity & Access Management
+- **Account lifecycle:** provisioning, management, and de-provisioning of users/computers within a domain.
+- **Authentication protocols:** Kerberos (tickets, TGT, TGS) and NTLM, and how each authenticates users.
+
+### Enterprise Administration & Security
+- **Group Policy Objects (GPOs):** enforce security baselines, software deployment, and registry settings across endpoints.
+- **Privileged access tiers:** the distinction between Domain Admins, Enterprise Admins, and standard users.
+
+---
+
+## 4. Linux Shell & Scripting Fundamentals
+
+Hands-on bash scripting practice covering shell architecture, automation, and permissions.
+
+### Skills Covered
+- Structural differences between user interfaces, system shells, and the Linux kernel
+- Shell environments across distributions (Bash, Zsh, Dash)
+- Automation with variables, loops, positional arguments, and conditionals
+- File permission management with `chmod`
+
+### Scripts
+
+**Interactive input handling** (`first_script.sh`):
 ```bash
 #!/bin/bash
-# Numerical loop executing 10 systematic ticks
+echo "Hey, what's your name?"
+read name
+echo "Welcome, $name"
+```
+
+**Numerical iteration** (`loop_script.sh`):
+```bash
+#!/bin/bash
 for i in {1..10}
 do
-    echo "This is loop number \$i"
+    echo "This is loop number $i"
 done
 ```
 
+**Conditional logic** (`conditional_script.sh`): simulates a credential validation flow using `if/else` branching on parsed string input.
+
+> *Link your GitHub repo or gist with the full scripts here.*
+
 ---
 
-## 🔬 Environments & Tools Utilized
-* **Operating System Environment:** Ubuntu Core OS / GNU Linux Terminal Environment
-* **File Composition Suites:** GNU nano Terminal-based Editor Workspace
-* **Security Modules Provider:** TryHackMe Interactive Learning Platforms
+## 5. Incident Response Playbook
+*Based on Google Cybersecurity Certificate — Course 2*
 
+A condensed reference for how organizations respond to a security incident, phase by phase:
+
+1. **Preparation** — building the tools, training, and resources needed before an incident happens.
+2. **Detection & Analysis** — monitoring alerts and logs via SIEM tooling to identify a genuine threat.
+3. **Containment** — isolating the threat immediately to stop it from spreading further.
+4. **Eradication & Recovery** — removing the root cause completely and restoring affected systems.
+5. **Post-Incident Activity** — reviewing what happened to strengthen defenses going forward.
+6. **Coordination** — keeping stakeholders informed and response efforts synchronized throughout.
+
+**Applied context:** SIEM tools (Splunk, Chronicle) support the Detection & Analysis phase by centralizing log data; SOAR tools support Containment and Eradication by automating playbook-driven responses.
+
+---
+
+## In Progress
+- Active Directory (TryHackMe) — Module 4 next
+- Hack the Box Academy — Web Requests module
+- Google Cybersecurity Certificate — Course 3: Connect & Protect (Network Security)
