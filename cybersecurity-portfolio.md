@@ -142,6 +142,4 @@ A condensed reference for how organizations respond to a security incident, phas
 ---
 
 ## In Progress
-- Active Directory (TryHackMe) — Module 4 next
-- Hack the Box Academy — Web Requests module
 - Google Cybersecurity Certificate — Course 3: Connect & Protect (Network Security)
