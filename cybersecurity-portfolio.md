@@ -137,9 +137,116 @@ A condensed reference for how organizations respond to a security incident, phas
 5. **Post-Incident Activity** — reviewing what happened to strengthen defenses going forward.
 6. **Coordination** — keeping stakeholders informed and response efforts synchronized throughout.
 
-**Applied context:** SIEM tools (Splunk, Chronicle) support the Detection & Analysis phase by centralizing log data; SOAR tools support Containment and Eradication by automating playbook-driven responses.
+**Applied context:** SIEM tools (Splunk, Chronicle) support the Detection & Analysis phase by centralizing log data; SOAR tools support Containment and Eradication by automating playbook-driven responce
 
----
+# Networking & Protocol Reference
 
-## In Progress
-- Google Cybersecurity Certificate — Course 3: Connect & Protect (Network Security)
+A quick-reference guide covering network models, core protocols, diagnostic commands, and application-layer session syntax. Built from hands-on lab work and used as a fast lookup during security exercises.
+
+## Layer Models
+
+| Layer | OSI Model | TCP/IP Model | Examples |
+|---|---|---|---|
+| 7 | Application | Application | HTTP, HTTPS, FTP, POP3, SMTP, IMAP, SSH |
+| 6 | Presentation | Application | Encryption, encoding (ASCII, Binary) |
+| 5 | Session | Application | Connection setup and maintenance |
+| 4 | Transport | Transport | TCP (reliable), UDP (fast) |
+| 3 | Network | Internet | IP, ICMP, IPSec |
+| 2 | Data Link | Link | Ethernet (802.3), Wi-Fi (802.11) |
+| 1 | Physical | Link | Cables, bits, radio frequencies |
+
+**Key points**
+- Each layer adds a header (and sometimes a trailer) to the data from the layer above before passing it down.
+- A `/24` subnet mask (`255.255.255.0`) fixes the first three octets as the network ID; only the last octet varies.
+- NAT is limited to 65,535 concurrent ports per public IP, since ports are a 16-bit field.
+
+## Protocols and Ports
+
+| Protocol | Transport | Port | Purpose |
+|---|---|---|---|
+| FTP | TCP | 21 | File transfer control channel |
+| Telnet | TCP | 23 | Unencrypted interactive shell |
+| SMTP | TCP | 25 | Mail routing between servers |
+| DNS | UDP/TCP | 53 | Hostname-to-IP resolution |
+| HTTP | TCP | 80 | Unencrypted web traffic |
+| POP3 | TCP | 110 | Downloads mail locally from server |
+| IMAP | TCP | 143 | Syncs mailbox across devices |
+| HTTPS | TCP | 443 | Encrypted web traffic |
+
+## Diagnostic Commands
+
+- `ping <target>` — sends ICMP echo requests to check reachability and measure round-trip time
+- `traceroute <target>` (Unix) / `tracert <target>` (Windows) — maps each hop to a destination using incrementing TTL values
+- `nslookup <domain>` — queries DNS servers for a domain's IP records
+- `whois <domain>` — looks up domain registration and ownership details
+
+**TShark**
+```bash
+tshark -r dns-query.pcapng -Nn
+```
+- `-r` reads a saved capture file instead of a live interface
+- `-Nn` resolves names using only data in the capture, skipping live DNS lookups
+
+## Application-Layer Sessions
+
+**HTTP methods**
+- `GET` — retrieve a resource
+- `POST` — submit new data to the server
+- `PUT` — create or overwrite a resource
+- `DELETE` — remove a resource
+
+**FTP**
+```
+USER anonymous
+PASS guest@domain.com
+ascii
+get target_flag.txt -
+STOR malicious.exe
+```
+
+**SMTP**
+```
+HELO mail.target.thm
+MAIL FROM:<bob@thm.com>
+RCPT TO:<alice@thm.com>
+DATA
+.
+```
+
+**POP3**
+```
+USER linda
+PASS Pa$123
+STAT
+LIST
+RETR 4
+DELE 4
+QUIT
+```
+
+**IMAP** (each command needs a client-chosen tag, e.g. `A1`)
+```
+A1 LOGIN linda Pa$123
+A2 SELECT INBOX
+A3 FETCH 4 BODY[]
+A4 MOVE 4 Archive
+A5 COPY 4 Backup
+A6 LOGOUT
+```
+
+## Routing Protocols
+
+| Protocol | Full Name | Scope | How it picks a route |
+|---|---|---|---|
+| RIP | Routing Information Protocol | Internal, small-scale | Lowest hop count |
+| OSPF | Open Shortest Path First | Internal, enterprise | Full topology map (link-state) |
+| EIGRP | Enhanced IGRP | Internal, Cisco | Bandwidth and latency (hybrid) |
+| BGP | Border Gateway Protocol | External, internet-wide | Path across autonomous systems |
+
+## DHCP: The DORA Process
+
+1. **Discover** — client broadcasts for available DHCP servers
+2. **Offer** — server responds with proposed configuration
+3. **Request** — client requests the offered configuration
+4. **Acknowledge** — server confirms and activates the lease
+
