@@ -67,8 +67,6 @@ Get-Service | Select-Object -Property Status
 
 `Where-Object` filters rows by logical condition — useful for isolating abnormal processes or unauthorized running services during an audit.
 
----
-
 ## 3. Active Directory Basics — Reference Write-up
 *TryHackMe — Active Directory rooms*
 
