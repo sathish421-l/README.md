@@ -64,16 +64,12 @@ Unlike CMD or Bash, which pass raw text, PowerShell pipes structured objects —
 # Isolate just the status column across all services
 Get-Service | Select-Object -Property Status
 ```
-
 `Where-Object` filters rows by logical condition — useful for isolating abnormal processes or unauthorized running services during an audit.
-
 ## 3. Active Directory Basics — Reference Write-up
 *TryHackMe — Active Directory rooms*
-
 ### Windows Domains & Architecture
 - **Domain Controllers (DC):** central authority managing authentication and security requests.
 - **Trees, Forests & Trusts:** how multi-domain environments establish trust boundaries and cross-domain resource access.
-
 ### Active Directory Infrastructure
 - **Objects & OUs:** Users, Groups, and Computers organized inside Organizational Units.
 - **NTDS.dit:** where AD stores directory data, cryptographic hashes, and group memberships.
